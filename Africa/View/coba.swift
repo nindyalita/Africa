@@ -13,6 +13,9 @@ struct coba: View {
     }
 }
 
-#Preview {
-    coba()
+struct coba_Previews: PreviewProvider {
+    static var previews: some View {
+        coba()
+            .previewLayout(.fixed(width: 400, height: 300))
+    }
 }
